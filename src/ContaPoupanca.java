@@ -1,13 +1,14 @@
 
 public class ContaPoupanca extends Conta {
 
-	public ContaPoupanca(Cliente cliente) {
+	public ContaPoupanca(Cliente cliente) throws IdadeInvalidaException {
 		super(cliente);
 	}
 
 	@Override
 	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Poupança ===");
-		super.imprimirInfosComuns();
+		System.out.println("=== Extrato Conta PoupanÃ§a ===");
+		this.imprimirInfosComuns();
 	}
+	
 }
